@@ -8,7 +8,11 @@ def index(request):
 
 
 def login(request):
-    return HttpResponse('login')
+    if request.method == 'GET':
+        return render(request, 'login.html')
+    elif request.method == 'POST':
+        pass
+
 
 
 def register(request):
