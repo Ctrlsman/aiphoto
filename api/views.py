@@ -1,4 +1,5 @@
-from django.shortcuts import render,redirect,HttpResponse
+# -*- coding:utf8 -*-
+from django.shortcuts import render, redirect, HttpResponse
 
 # Create your views here.
 
@@ -12,7 +13,6 @@ def login(request):
         return render(request, 'login.html')
     elif request.method == 'POST':
         pass
-
 
 
 def register(request):
