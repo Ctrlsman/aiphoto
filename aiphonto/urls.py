@@ -18,6 +18,6 @@ from django.urls import path, include
 from api import views
 
 urlpatterns = [
-    path('admin/', include('backend.urls', namespace='admin')),
+    path('admin/', include('backend.urls', namespace='backend')),
     path('/(\w+).html$', include('api.urls', namespace='api')),
 ]

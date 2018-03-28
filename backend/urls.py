@@ -15,6 +15,9 @@ Including another URLconf
 """
 from django.urls import path, include
 from . import views
+
+app_name = 'backend'
+
 urlpatterns = [
-    path('index', views.index),
+    path('index.html', views.index),
 ]

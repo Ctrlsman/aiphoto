@@ -15,6 +15,9 @@ Including another URLconf
 """
 from django.urls import path, include
 from . import views
+
+app_name = 'api'
+
 urlpatterns = [
     path('index.html', views.index),
 ]
