@@ -5,6 +5,11 @@ from django.shortcuts import render, redirect, HttpResponse
 
 
 def index(request):
+    '''
+    首页
+    :param request:
+    :return:
+    '''
     return render(request, 'index.html')
 
 
