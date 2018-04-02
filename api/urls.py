@@ -20,4 +20,5 @@ app_name = 'api'
 
 urlpatterns = [
     path('index.html', views.index),
+    path('wenhua.html', views.wenhua),
 ]

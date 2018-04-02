@@ -13,6 +13,33 @@ def index(request):
     return render(request, 'index.html')
 
 
+def wenhua(request):
+    '''
+    品牌文化页面
+    :param request:
+    :return:
+    '''
+    return HttpResponse('wenhua')
+
+
+def news(request):
+    '''
+    新闻活动
+    :param request:
+    :return:
+    '''
+    return HttpResponse('新闻')
+
+
+def case(request):
+    '''
+    新婚摄影
+    :param request:
+    :return:
+    '''
+    return HttpResponse('新婚摄影')
+
+
 def login(request):
     if request.method == 'GET':
         return render(request, 'login.html')
